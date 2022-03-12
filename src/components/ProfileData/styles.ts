@@ -1,11 +1,11 @@
-import styled, { css } from 'styled-components';
 import {
-  RiGroupLine,
   RiBuilding4Line,
-  RiMapPin2Line,
-  RiMailLine,
+  RiGroupLine,
   RiLinksLine,
-} from 'react-icons/ri';
+  RiMailLine,
+  RiMapPin2Line,
+} from "react-icons/ri";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div``;
 

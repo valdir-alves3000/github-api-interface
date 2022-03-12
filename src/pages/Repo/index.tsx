@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
-
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { APIRepo } from "../../@types";
 import {
-  Container,
   Breadcrumb,
-  RepoIcon,
-  Stats,
-  StarIcon,
+  Container,
   ForkIcon,
-  LinkButton,
   GithubIcon,
-} from './styles';
-
-import { APIRepo } from '../../@types';
+  LinkButton,
+  RepoIcon,
+  StarIcon,
+  Stats,
+} from "./styles";
 
 interface Data {
   repo?: APIRepo;
@@ -28,7 +26,7 @@ const Repo: React.FC = () => {
       async (response) => {
         setData(
           response.status === 404
-            ? { error: 'Repository not found!' }
+            ? { error: "Repository not found!" }
             : { repo: await response.json() }
         );
       }
@@ -48,13 +46,13 @@ const Repo: React.FC = () => {
       <Breadcrumb>
         <RepoIcon />
 
-        <Link className={'username'} to={`/${username}`}>
+        <Link className={"username"} to={`/${username}`}>
           {username}
         </Link>
 
         <span>/</span>
 
-        <Link className={'reponame'} to={`/${username}/${reponame}`}>
+        <Link className={"reponame"} to={`/${username}/${reponame}`}>
           {reponame}
         </Link>
       </Breadcrumb>

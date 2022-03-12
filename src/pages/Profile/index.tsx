@@ -1,22 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { APIRepo, APIUser } from "../../@types";
+import ProfileData from "../../components/ProfileData";
+import RandomCalendar from "../../components/RandomCalendar";
+import RepoCard from "../../components/RepoCard";
 import {
-  Container,
-  Main,
-  LeftSide,
-  RightSide,
-  Repos,
   CalendarHeading,
+  Container,
+  LeftSide,
+  Main,
   RepoIcon,
+  Repos,
+  RightSide,
   Tab,
-} from './styles';
-
-import ProfileData from '../../components/ProfileData';
-import RepoCard from '../../components/RepoCard';
-import RandomCalendar from '../../components/RandomCalendar';
-
-import { APIUser, APIRepo } from '../../@types';
+} from "./styles";
 
 interface Data {
   user?: APIUser;
@@ -25,7 +22,7 @@ interface Data {
 }
 
 const Profile: React.FC = () => {
-  const { username = 'guilhermerodz' } = useParams();
+  const { username = "valdir-alves3000" } = useParams();
   const [data, setData] = useState<Data>();
 
   useEffect(() => {
@@ -36,7 +33,7 @@ const Profile: React.FC = () => {
       const [userResponse, reposResponse] = responses;
 
       if (userResponse.status === 404) {
-        setData({ error: 'User not found!' });
+        setData({ error: "User not found!" });
         return;
       }
 

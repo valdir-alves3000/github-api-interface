@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-
-import { Container, GithubLogo, SearchForm } from './styles';
-
-import { ThemeName } from '../../styles/themes';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { ThemeName } from "../../styles/themes";
+import { Container, GithubLogo, SearchForm } from "./styles";
 
 interface Props {
   themeName: ThemeName;
@@ -11,17 +9,17 @@ interface Props {
 }
 
 const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
   const navigate = useNavigate();
 
   function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
 
-    navigate('/' + search.toLowerCase().trim());
+    navigate("/" + search.toLowerCase().trim());
   }
 
   function toggleTheme() {
-    setThemeName(themeName === 'light' ? 'dark' : 'light');
+    setThemeName(themeName === "light" ? "dark" : "light");
   }
 
   return (

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import {
   Container,
@@ -11,7 +11,7 @@ import {
   LocationIcon,
   EmailIcon,
   BlogIcon,
-} from './styles';
+} from "./styles";
 
 interface Props {
   username: string;

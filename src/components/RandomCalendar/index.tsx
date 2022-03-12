@@ -1,8 +1,7 @@
-import React from 'react';
-import Heatmap from 'react-calendar-heatmap';
-import { subYears, isBefore, isSameDay, addDays } from 'date-fns';
-
-import { Container } from './styles';
+import { addDays, isBefore, isSameDay, subYears } from "date-fns";
+import React from "react";
+import Heatmap from "react-calendar-heatmap";
+import { Container } from "./styles";
 
 type HeatmapValue = { date: Date; count: number };
 

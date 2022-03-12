@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -7,7 +7,7 @@ export const Container = styled.div`
   overflow: hidden;
 
   padding: 16px 20px 0 10px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border)
   border-radius: 6px;
 
   .wrapper {

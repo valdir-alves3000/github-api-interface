@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   * {
@@ -25,7 +25,7 @@ export default createGlobalStyle`
     ${(props) => {
       const theme = props.theme;
 
-      let append = '';
+      let append = "";
       Object.entries(theme).forEach(([prop, value]) => {
         append += `--${prop}: ${value};`;
       });

@@ -1,26 +1,27 @@
-<h1 align="center">
-UI Clone - Github
-</h1>
+# Getting Started with Create React App
 
-<p align="center">Responsive Github UI Clone (partial) for study purposes.</p>
-<p align="center">Deployed <a href="https://rocketseat-clone-github.netlify.app/">here</a>.</p>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<p align="center">
-  <a href="https://github.com/Rocketseat/youtube-clone-github/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/rocketseat/youtube-clone-github?color=%236633cc&logoColor=%236633cc&style=flat" alt="Contributors">
-  </a>
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/github/license/rocketseat/youtube-clone-github?color=%236633cc&logo=mit" alt="License">
-  </a>
-</p>
+## About project
 
-<hr>
+![plot](./image/desafio-dio.png)
+This repository was created in order to show how we can create a frontend application with reusable components.
 
-## Participants
+Developed by [Matheus Benites](https://github.com/benits/github-api-interface), [Youtube](https://www.youtube.com/playlist?list=PLTv2Rbwcr_Cru7KIHcffE1Shg9X9Eix7a), as a challenge for the dissemination of knowledge within the platform [DIO](https://dio.me/sign-up?ref=WXSFIF1TPZ), Come and be part of this team! :wink:
 
-[<img src="https://avatars3.githubusercontent.com/u/10366880?s=460&v=4" width="75px;"/>](https://github.com/guilhermerodz)
+Or Developed by [Guilherme Rodz](https://github.com/rocketseat-content/youtube-clone-github), [YouTube](https://www.youtube.com/watch?v=iLEbGQXsg3k), as a challenge for the dissemination of knowledge within the platform [Rocketseat](https://app.rocketseat.com.br/), Come and be part of this team! :wink:
 
-[Guilherme Rodz](https://github.com/guilhermerodz)
+We will create an application using the github public api.
+
+## Challenge
+
+Understand how the integration with the api works, understand the responsibility of each component and develop the Application Layout.
+
+### Preview
+
+Print of the finished project.
+
+![plot](./image/snapshot.png)
 
 ## Techs
 
@@ -29,17 +30,7 @@ UI Clone - Github
 - [x] Styled Components
 - [x] TypeScript
 
-## Ideas to implement
-
-- [ ] Use [SWR](https://swr.vercel.app/) as cache invalidation strategy
-- [ ] Fetch data from [GitHub V4 API](https://docs.github.com/en/graphql) (GraphQL instead of REST).
-- [ ] Create new routes with [React Router](https://reactrouter.com/web/guides/quick-start) (e.g. Github Feed, complete Repo page)
-
 ## Starting Dev Environment
 
 1. Run `npm install` or `yarn install`.<br />
 2. Run `yarn start` and access `http://localhost:3000`.<br />
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.

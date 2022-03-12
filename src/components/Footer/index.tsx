@@ -1,6 +1,5 @@
-import React from 'react';
-
-import { Container, Line, GithubLogo } from './styles';
+import React from "react";
+import { Container, GithubLogo, Line } from "./styles";
 
 const Footer: React.FC = () => {
   return (
